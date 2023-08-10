@@ -9,8 +9,8 @@ terraform {
 
 provider "aws" {
   region                   = "us-east-1"
-  shared_config_files      = ["/Users/devavrat.oka/.aws/config"]
-  shared_credentials_files = ["/Users/devavrat.oka/.aws/credentials"]
+//  shared_config_files      = ["/Users/devavrat.oka/.aws/config"]
+//  shared_credentials_files = ["/Users/devavrat.oka/.aws/credentials"]
   profile                  = "default"
 }
 
