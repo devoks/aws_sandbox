@@ -61,7 +61,7 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
 }
 
 // DynamodDB is a key-value store with strongly consistent reads and writes, which are required for maintaining a locking system. 
-// The table must have a partition key named LockID with type of String
+// The table must have a partition key named LockID with type of String.
 
 resource "aws_dynamodb_table" "terraform_locks" {
   name         = "terraform-up-and-running-locks"
