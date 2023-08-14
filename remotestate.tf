@@ -1,19 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region                   = "us-east-1"
-  shared_config_files      = ["/Users/devavrat.oka/.aws/config"]
-  shared_credentials_files = ["/Users/devavrat.oka/.aws/credentials"]
-  profile                  = "default"
-}
-
 // Create the S3 bucket which will be used for storing remote state. 
 // Create the bucket with accidental deletion prevention turned on.
 // To delete bucket, set to false or comment out.
